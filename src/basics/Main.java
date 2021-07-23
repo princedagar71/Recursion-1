@@ -9,6 +9,7 @@ public class Main {
         Scanner sc=new Scanner(System.in);
         int n= sc.nextInt();
         predec(n);
+        preascend(n);
 
     }
     public static void predec(int n){
@@ -17,4 +18,12 @@ public class Main {
         System.out.println(n);
         predec(n-1);
     }
+    public static void preascend(int n){
+        if(n==0)
+            return;
+        preascend(n-1);
+        System.out.println(n);
+
+    }
+
 }
